@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Image Gallery</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            color: white;
+            margin-bottom: 50px;
+        }
+
+        header h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+
+        .content {
+            background: white;
+            border-radius: 15px;
+            padding: 40px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            margin-bottom: 30px;
+            line-height: 1.8;
+            color: #333;
+        }
+
+        .content h2 {
+            color: #667eea;
+            margin-bottom: 20px;
+            font-size: 2em;
+        }
+
+        .content p {
+            margin-bottom: 15px;
+            font-size: 1.05em;
+        }
+
+        .nav-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 15px 30px;
+            background: #667eea;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background 0.3s ease, transform 0.3s ease;
+            font-size: 1em;
+            font-weight: 600;
+            cursor: pointer;
+            border: none;
+        }
+
+        .btn:hover {
+            background: #764ba2;
+            transform: translateY(-3px);
+        }
+
+        .btn-secondary {
+            background: #764ba2;
+        }
+
+        .btn-secondary:hover {
+            background: #667eea;
+        }
+
+        footer {
+            text-align: center;
+            color: white;
+            padding: 30px;
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+        }
+
+        footer p {
+            font-size: 0.9em;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2em;
+            }
+
+            .content {
+                padding: 20px;
+            }
+
+            .nav-buttons {
+                flex-direction: column;
+            }
+
+            .btn {
+                width: 100%;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>About Our Gallery</h1>
+            <p>Learn more about our image collection</p>
+        </header>
+
+        <div class="content">
+            <h2>Welcome to Our Gallery</h2>
+            <p>
+                We are passionate about showcasing the world's most beautiful and inspiring imagery. 
+                Our collection features stunning photographs from talented photographers around the globe, 
+                capturing moments of natural beauty, adventure, and wonder.
+            </p>
+            
+            <h2>Our Mission</h2>
+            <p>
+                Our mission is to inspire and connect people through visual storytelling. 
+                We believe that images have the power to transcend language and culture, 
+                bringing us closer to understanding the beauty of our world.
+            </p>
+
+            <h2>What We Offer</h2>
+            <p>
+                From breathtaking landscapes to serene nature scenes, our gallery features a diverse 
+                collection of high-quality images. Each photograph tells a unique story and captures 
+                a moment in time that is both memorable and meaningful.
+            </p>
+
+            <h2>Get Started</h2>
+            <p>
+                Explore our gallery of stunning images and discover the beauty of the world through 
+                our lens. Whether you're looking for inspiration, decoration, or simply want to admire 
+                some amazing photography, we have something for everyone.
+            </p>
+        </div>
+
+        <div class="nav-buttons">
+            <a href="index.html" class="btn">Back to Gallery</a>
+            <button class="btn btn-secondary" onclick="alert('Contact: hello@gallery.com')">Contact Us</button>
+        </div>
+
+        <footer>
+            <p>&copy; 2025 Image Gallery. All rights reserved. | Images sourced from Unsplash</p>
+        </footer>
+    </div>
+</body>
+</html>
