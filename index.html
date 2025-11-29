@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Image Webpage</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            color: white;
+            margin-bottom: 50px;
+        }
+
+        header h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 50px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+        }
+
+        .card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .card-content {
+            padding: 20px;
+        }
+
+        .card-content h3 {
+            color: #333;
+            margin-bottom: 10px;
+            font-size: 1.3em;
+        }
+
+        .card-content p {
+            color: #666;
+            line-height: 1.6;
+            font-size: 0.95em;
+        }
+
+        footer {
+            text-align: center;
+            color: white;
+            padding: 30px;
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+        }
+
+        footer p {
+            font-size: 0.9em;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2em;
+            }
+
+            .gallery {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Beautiful Images Gallery</h1>
+            <p>A collection of stunning images from around the web</p>
+        </header>
+
+        <div class="gallery">
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=500&h=400&fit=crop" alt="Mountain landscape">
+                <div class="card-content">
+                    <h3>Mountain Landscape</h3>
+                    <p>Experience the breathtaking views of majestic mountains covered in snow and surrounded by natural beauty.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=500&h=400&fit=crop" alt="Ocean waves">
+                <div class="card-content">
+                    <h3>Ocean Waves</h3>
+                    <p>The endless beauty of the ocean with crashing waves and golden sunlight reflecting on the water.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1469022563149-aa64dbd37dae?w=500&h=400&fit=crop" alt="Forest path">
+                <div class="card-content">
+                    <h3>Forest Path</h3>
+                    <p>Walk through lush green forests with tall trees creating a serene and peaceful atmosphere.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1495616811223-4d98c6e9c869?w=500&h=400&fit=crop" alt="Sunset">
+                <div class="card-content">
+                    <h3>Golden Sunset</h3>
+                    <p>Witness the magical colors of sunset painting the sky in shades of orange, pink, and purple.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=500&h=400&fit=crop" alt="Northern lights">
+                <div class="card-content">
+                    <h3>Northern Lights</h3>
+                    <p>The mesmerizing Aurora Borealis dancing across the night sky in brilliant shades of green and blue.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=500&h=400&fit=crop" alt="Desert dunes">
+                <div class="card-content">
+                    <h3>Desert Dunes</h3>
+                    <p>Vast golden dunes stretching endlessly under a clear blue sky in the heart of the desert.</p>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>&copy; 2025 Image Gallery. All rights reserved. | Images sourced from Unsplash</p>
+        </footer>
+    </div>
+</body>
+</html>
